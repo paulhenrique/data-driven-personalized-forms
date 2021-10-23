@@ -3,8 +3,7 @@ import React, { useState, useCallback } from "react";
 import ReactDataGrid from "@inovua/reactdatagrid-enterprise";
 import "@inovua/reactdatagrid-enterprise/index.css";
 
-const gridStyle = { minHeight: 550 };
-
+import tableData from "../source/tablesData.json";
 const columns = [
   {
     name: "id",
@@ -18,27 +17,8 @@ const columns = [
   { name: "age", header: "Age", minWidth: 150, type: "number" }
 ];
 
-const App = () => {
-  const [dataSource, setDataSource] = useState([
-    {
-      id: 1,
-      name: "Graziela",
-      city: "Campinas",
-      age: "22"
-    },
-    {
-      id: 2,
-      name: "Rodrigo",
-      city: "Campinas",
-      age: "25"
-    },
-    {
-      id: 2,
-      name: "Renata",
-      city: "Campinas",
-      age: "22"
-    }
-  ]);
+const ReactDataGridUsage = () => {
+  const [dataSource, setDataSource] = useState(tableData);
 
   const onEditComplete = useCallback(
     ({ value, columnId, rowIndex }) => {
@@ -52,17 +32,16 @@ const App = () => {
 
   return (
     <div>
-      <h3>Grid with inline edit</h3>
       <ReactDataGrid
         idProperty="id"
-        style={gridStyle}
         onEditComplete={onEditComplete}
         editable={true}
         columns={columns}
         dataSource={dataSource}
       />
+      <pre>{JSON.stringify(dataSource, null, 2)}</pre>
     </div>
   );
 };
 
-export default () => <App />;
+export default () => <ReactDataGridUsage />;
