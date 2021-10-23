@@ -1,6 +1,6 @@
 import React from "react";
 import useFieldApi from "@data-driven-forms/react-form-renderer/use-field-api";
-import { TextField } from "@material-ui/core";
+import { TextField, Box } from "@material-ui/core";
 
 const PersonalizedTextField = (props) => {
   const {
@@ -13,9 +13,15 @@ const PersonalizedTextField = (props) => {
     ...rest
   } = useFieldApi(props);
   return (
-    <div>
-      <TextField required={isRequired} label={label} {...input} {...rest} />
-    </div>
+    <Box my={2}>
+      <TextField
+        fullWidth
+        required={isRequired}
+        label={label}
+        {...input}
+        {...rest}
+      />
+    </Box>
   );
 };
 
