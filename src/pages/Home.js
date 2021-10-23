@@ -14,13 +14,28 @@ const Home = () => {
         alignItems="flex-start"
         style={{ gap: "20px" }}
       >
-        <Button variant="contained" to="/form" color="primary" component={Link}>
+        <Button
+          variant="contained"
+          to="/defaultForm"
+          color="primary"
+          component={Link}
+        >
           Formulário Padrão
         </Button>
-        <Button variant="contained" to="/form" color="primary" component={Link}>
+        <Button
+          variant="contained"
+          to="/personalizedForm"
+          color="primary"
+          component={Link}
+        >
           Formulário Com Componente Personalizado
         </Button>
-        <Button variant="contained" color="primary" component={Link}>
+        <Button
+          variant="contained"
+          color="primary"
+          to="reactDataGrid"
+          component={Link}
+        >
           Componente Personalizado
         </Button>
       </Box>
