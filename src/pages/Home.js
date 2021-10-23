@@ -15,6 +15,9 @@ const Home = () => {
         style={{ gap: "20px" }}
       >
         <Button variant="contained" to="/form" color="primary" component={Link}>
+          Formulário Padrão
+        </Button>
+        <Button variant="contained" to="/form" color="primary" component={Link}>
           Formulário Com Componente Personalizado
         </Button>
         <Button variant="contained" color="primary" component={Link}>

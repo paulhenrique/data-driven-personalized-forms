@@ -2,13 +2,8 @@ import React from "react";
 import { FormRenderer } from "@data-driven-forms/react-form-renderer";
 import { Typography } from "@material-ui/core";
 import FormTemplate from "../components/FormTemplate";
-import PersonalizedTextField from "../components/PersonalizedTextField";
 import schema from "../schemes/firstFormExample.json";
-
-const componentMapper = {
-  textField: PersonalizedTextField,
-  "custom-component-type": PersonalizedTextField
-};
+import PersonalizedFields from "../source/PersonalizedFields";
 
 const ComponentMapper = () => {
   const [values, setValues] = React.useState({});
@@ -16,7 +11,7 @@ const ComponentMapper = () => {
     <div>
       <Typography variant="h4">Formulário com inputs personalizados</Typography>
       <FormRenderer
-        componentMapper={componentMapper}
+        componentMapper={PersonalizedFields}
         FormTemplate={FormTemplate}
         schema={schema}
         onSubmit={(values) => setValues(values)}
