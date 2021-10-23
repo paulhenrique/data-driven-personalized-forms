@@ -1,11 +1,9 @@
 {
   "fields": [
     {
-      "component": "textField",
+      "component": "dataTable",
       "name": "first-name",
-      "label": "First name",
-      "isRequired": true,
-      "customProp": true
+      "label": "First name"
     },
     {
       "component": "textField",
