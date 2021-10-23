@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "test": "react-scripts test --env=jsdom",
+    "start": "react-scripts start",
+    "eject": "react-scripts eject",
+    "build": "react-scripts build"
+  },
+  "name": "data-driven-forms-example",
+  "main": "src/index.js",
+  "keywords": [],
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "description": "",
+  "dependencies": {
+    "@data-driven-forms/mui-component-mapper": "latest",
+    "@data-driven-forms/react-form-renderer": "latest",
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "ag-grid": "18.1.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-router-dom": "5.3.0",
+    "react-scripts": "3.0.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
