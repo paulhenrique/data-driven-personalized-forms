@@ -1,0 +1,29 @@
+{
+  "fields": [
+    {
+      "component": "textField",
+      "name": "first-name",
+      "label": "First name",
+      "isRequired": true,
+      "customProp": true
+    },
+    {
+      "component": "textField",
+      "name": "last-name",
+      "label": "Last name",
+      "isRequired": true
+    },
+    {
+      "component": "textField",
+      "name": "age",
+      "label": "Your age",
+      "type": "number"
+    },
+    {
+      "component": "custom-component-type",
+      "name": "password",
+      "label": "Your password",
+      "type": "password"
+    }
+  ]
+}
