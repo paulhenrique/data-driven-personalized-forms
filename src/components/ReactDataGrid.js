@@ -17,15 +17,13 @@ const ReactDataGridUsage = ({ columns, dataSource, onUpdate }) => {
   );
 
   return (
-    <div>
-      <ReactDataGrid
-        idProperty="id"
-        onEditComplete={onEditComplete}
-        editable={true}
-        columns={columns}
-        dataSource={dataSource}
-      />
-    </div>
+    <ReactDataGrid
+      idProperty="id"
+      onEditComplete={onEditComplete}
+      editable={true}
+      columns={columns}
+      dataSource={dataSource}
+    />
   );
 };
 
