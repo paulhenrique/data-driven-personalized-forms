@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 import React, { useCallback } from "react";
 
-import ReactDataGrid from "@inovua/reactdatagrid-enterprise";
+import ReactDataGrid from "@inovua/reactdatagrid-community";
 import "@inovua/reactdatagrid-enterprise/index.css";
 
 const ReactDataGridUsage = ({ columns, dataSource, onUpdate }) => {
